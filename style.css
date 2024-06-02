@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+}
+
+div{
+	border-style:solid;
+	border-width:1px;
+}
+
+
+#profile{
+	display: flex;
+  flex-direction: column;
+	flex-grow:1;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile img{
+	width:200px;
+	height:200px;
+	border-radius:100%;
+}
+
+#img_container{
+	width:200px;
+	height:200px;
+}
+
+
+#app{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+#content{
+  flex-grow: 1.618;
+}
+
+.row{
+	display: flex;
+  flex-direction: row;
+}
+
+.card{
+	background-color:cadetblue;
+	width:150px;
+	height:100px;
+  border-radius: 10px;
+}
