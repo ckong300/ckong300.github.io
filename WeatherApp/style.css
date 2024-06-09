@@ -1,0 +1,102 @@
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family:sans-serif;
+}
+
+
+
+body{
+	margin:0px;
+	display:flex;
+	background-image:url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#container {
+	width: 50%;
+	min-width:500px;
+	padding:1em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+	row-gap:1em;
+	background:white;
+}
+
+
+.app{
+	width:400px;
+	display: flex;
+	flex-direction: column;
+	border-style: solid;
+	border-width:1px;
+	min-width: 300px;
+
+}
+
+.city{
+	margin:4px;
+	text-align: center;
+}
+
+.icon{
+	height:300px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+
+#input{
+	align-self: center;
+}
+
+.temp{
+	flex-grow:1;
+	font-weight: 900;
+	font-size:32px;
+}
+
+.desc{
+	flex-grow:2
+}
+
+.date{
+	flex-grow:1;
+	background:lightblue;
+}
+
+.humidity{
+	flex-grow:1;
+	background:cadetblue;
+}
+
+.wind{
+	flex-grow:1;
+	background:cadetblue;
+}
+
+.moreinfo{
+	flex-grow:2;
+	background:cadetblue;
+}
+
+
+.horizontal{
+	flex-direction: row;
+	justify-content: space-evenly;
+	height:50px;
+}
+
+.flexbox{
+	display:flex;
+}

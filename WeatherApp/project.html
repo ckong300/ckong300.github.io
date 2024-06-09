@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="skeleton.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+	<div id=container>
+
+		<div id = app class="app" >
+			<div id = cityname class="city">
+				CITY NAME
+			</div>
+			<div id=icon class="icon">
+				<img id=img class="img">
+			</div>
+			<div class = "flexbox horizontal">
+				<div id = temp class="temp">
+					68
+				</div>
+				<div id = description class="desc">
+					Description
+				</div>
+				<div id = date class="date">
+					Date
+				</div>
+			</div>
+			<div class ="flexbox horizontal">
+				<div id = humidity class="humidity">
+					Humidity
+				</div>
+				<div id = wind class="wind">
+					Windspeed
+				</div>
+				<div id=moreinfo class="moreinfo">
+					More Info
+				</div>
+			</div>
+		</div> <!--app-->
+
+		<!-- skeleton app -->  
+		<div id = skeleton class = "app" >
+			<div class = city>
+				<div class="loading_bar"> </div>
+			</div>
+			<div class=icon>
+				<div class="loading_bar"> </div>
+			</div>
+			<div class = "flexbox horizontal">
+				<div class= temp>
+					<div class="loading_bar"> </div>
+				</div>
+				<div class = desc>
+					<div class="loading_bar"> </div>
+				</div>
+				<div class = date>
+					<div class="loading_bar"> </div>
+				</div>
+			</div>
+			<div class ="flexbox horizontal">
+				<div class = humidity>
+					<div class="loading_bar"> </div>
+				</div>
+				<div class = wind>
+					<div class="loading_bar"> </div>
+				</div>
+				<div class=moreinfo>
+					<div class="loading_bar"> </div>
+				</div>
+			</div>
+		</div>
+
+		<input id=input type="text" placeholder="Search by city name"  maxlength=100 ></input>
+	</div> <!--/container-->
+
+	<script src="script.js"></script>
+
+
+</body>
+
+</html>
