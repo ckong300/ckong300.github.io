@@ -8,10 +8,10 @@ body{
 	width: 100%;
 }
 
-div{
+/* div{
 	border-style:solid;
 	border-width:1px;
-}
+} */
 
 
 #profile{
@@ -31,6 +31,7 @@ div{
 #img_container{
 	width:200px;
 	height:200px;
+
 }
 
 
@@ -48,11 +49,57 @@ div{
 .row{
 	display: flex;
   flex-direction: row;
+	column-gap:1em;
+	margin:1em;
 }
 
+/* ---- Card related CSS ----  */
+
 .card{
-	background-color:cadetblue;
-	width:150px;
-	height:100px;
+  position: relative;
+	width:300px;
+	height:200px;
   border-radius: 10px;
+	overflow:hidden;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* this will all the <img> inside .card class */
+.card img{
+	width:300px;
+	height:200px;
+	position: absolute;
+	z-index: -1;
+	border-radius: 10px;
+}
+
+.card h2{
+	width: 100%;
+	position: absolute;
+  z-index:1;
+	text-align: center;
+	background-color:rgba(0,0,0,.4)
+}
+
+.card a{
+	color:white;
+	text-decoration:none;
+}
+
+.info {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	border-radius: 0 0 10px 10px;
+	background-color:rgba(255,255,255,0);
+	height:0%;
+	transition-duration: 0.5s;
+	text-align: center;
+}
+
+/* When hover over card, css will apply to .info */
+.card:hover .info{
+	height:40%;
+	transition-duration: 1s;
+	background-color:rgba(255,255,255,0.6);
 }
