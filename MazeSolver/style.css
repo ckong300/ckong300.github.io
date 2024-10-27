@@ -1,0 +1,84 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#app{
+	border-style:solid;
+	border-width:1px;
+	display: flex;
+	flex-direction: column;
+	height:max-content;
+
+}
+
+#controlPanel{
+	border-style:solid;
+	border-width:1px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+#maze{
+	border-style:inset;
+	border-width:2px;
+}
+
+/* #myCanvas{
+	width:600px;
+	height:600px;
+} */
+
+#colorPanel{
+	width: 54px;
+	display: flex;
+	flex-direction: column;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#lowerRow{
+	display: flex;
+	flex-direction: row;
+}
+
+.color{
+	width:50px;
+	height:50px;
+	border-radius:8px;
+	margin:2px;
+}
+
+#black{
+	background-color: black;
+}
+
+#white{
+	background-color: white;
+}
+
+#start{
+	background-color: lightgreen;
+}
+
+#end{
+	background-color: red;
+}
+
+#green{
+	background-color: green;
+}
+
+#orange{
+	background-color: orange;
+}
